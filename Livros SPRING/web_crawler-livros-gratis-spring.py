@@ -19,7 +19,8 @@ from sys import stdout
 import pandas as pd
 
 # Carregados os dados no DataFrame
-books = pd.read_csv('url_books.csv')
+csv_file = 'https://raw.githubusercontent.com/Mekylei-Belchior/web_crawling-web_scrapping/master/Livros%20SPRING/url_books.csv'
+books = pd.read_csv(csv_file)
 
 # Verifica se no diretório corrente do arquivo (.py) existe o diretório (Springer)
 # Caso não, cria o diretório
